@@ -1,0 +1,10 @@
+2025-06-11 15:29:37.074 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Obteniendo todos los libros
+2025-06-11 15:29:47.516 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Buscando libro con id: 1
+2025-06-11 15:29:47.543 [executor-thread-1] WARN  com.beesion.ms.test.resource.BookResource - No se encontró libro con id: 1
+2025-06-11 15:29:51.080 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Buscando libros con más de 1 páginas
+2025-06-11 15:29:51.132 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - No se encontraron libros con más de 1 páginas
+2025-06-11 15:29:55.081 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Insertando nuevo libro: Título
+2025-06-11 15:29:59.540 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Buscando libros con más de 1 páginas
+2025-06-11 15:30:02.614 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Obteniendo todos los libros
+2025-06-11 15:30:06.795 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Buscando libro con id: 1
+2025-06-11 15:30:09.692 [executor-thread-1] INFO  com.beesion.ms.test.resource.BookResource - Buscando libros con más de 1 páginas
