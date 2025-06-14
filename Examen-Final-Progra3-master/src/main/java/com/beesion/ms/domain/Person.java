@@ -8,13 +8,14 @@ import jakarta.persistence.SequenceGenerator;
 @Entity
 public class Person {
 
-	private Long id;
-	private String name;
-
 	@Id
 	@SequenceGenerator(name = "PersonIdGenerator", sequenceName = "person_seq", allocationSize = 1)
 	@GeneratedValue(generator = "PersonIdGenerator")
+	private Long id;
 
+	private String name;
+
+	// Getters y setters normales
 	public Long getId() {
 		return id;
 	}
@@ -30,5 +31,4 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 }

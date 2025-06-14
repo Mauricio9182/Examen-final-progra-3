@@ -7,11 +7,6 @@ import jakarta.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class PersonRepo implements PanacheRepository<Person> {
 
-	// Ya puedes usar métodos como:
-	// - findById(Long id)
-	// - listAll()
-	// - persist(Person person)
-	// - deleteById(Long id)
-	// sin necesidad de EntityManager ni lógica personalizada
+
 
 }

@@ -1,11 +1,11 @@
 package com.beesion.ms.service.impl;
 
 import com.beesion.ms.domain.Person;
-import com.beesion.ms.repository.impl.IPersonRepo;
+import com.beesion.ms.repository.PersonRepo;
 import com.beesion.ms.service.IPersonService;
-
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;  // Importar la anotación
 
 import java.util.List;
 
@@ -13,15 +13,16 @@ import java.util.List;
 public class PersonService implements IPersonService {
 
 	@Inject
-	private IPersonRepo personRepo;
+	PersonRepo personRepo;
 
 	@Override
-	public void save(Person per) {
-		personRepo.save(per);
+	@Transactional  // <-- Aquí la agregamos para que haya transacción activa al persistir
+	public void save(Person person) {
+		personRepo.persist(person);
 	}
 
 	@Override
 	public List<Person> findAll() {
-		return personRepo.findAll();
+		return personRepo.listAll();
 	}
 }

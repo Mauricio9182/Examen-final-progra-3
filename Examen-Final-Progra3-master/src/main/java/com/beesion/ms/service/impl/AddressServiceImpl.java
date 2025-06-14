@@ -47,4 +47,12 @@ public class AddressServiceImpl implements AddressService {
                 .map(addressMapper::toDto)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<AddressDto> getAllAddresses() {
+        List<Address> addresses = addressRepository.listAll();
+        return addresses.stream()
+                .map(addressMapper::toDto)
+                .collect(Collectors.toList());
+    }
 }

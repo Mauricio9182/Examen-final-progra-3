@@ -35,4 +35,10 @@ public class AddressResource {
         List<AddressDto> addresses = addressService.getAddressesByPersonId(personId);
         return Response.ok(addresses).build();
     }
+
+    @GET
+    public Response getAllAddresses() {
+        List<AddressDto> addresses = addressService.getAllAddresses();
+        return Response.ok(addresses).build();
+    }
 }
